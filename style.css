@@ -1,3 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+
+body {
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);;
+}
+
 div {
+    font-family: MuseoModerno;
     text-align: center;
+}
+
+#main-heading {
+    font-family: Balsamiq Sans;
+}
+
+#new-book {
+    font-family: Balsamiq Sans;
+    text-align: center;
+    display: block;
+    margin: 10 auto;
+    width: 100px;
+    height: 20px;
+    border: none;
+    box-shadow: 0px 0px -3px 3px rgba(0,0,0,0.75);
+}
+#new-book:active, #new-book:hover{
+    border: solid 1px;  
 }

@@ -30,8 +30,8 @@ function render() {
         bookDiv.appendChild(bookTitle);
         bookDiv.appendChild(bookAuthor);
         bookDiv.appendChild(bookInfo);
-        bookDiv.setAttribute("style", "border: solid 5px; margin: auto; width: 200px;")
-        bookSection.setAttribute("style", "margin: auto; display: grid; grid-template-columns: repeat(5, 250px); gap: 10px; justify-content: space-evenly")
+        bookDiv.setAttribute("style", "box-shadow: 0px 0px 47px -14px rgba(0,0,0,0.75); background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(87,87,87,0.6421919109440651) 0%); border-radius: 10px; margin: auto; width: 200px;")
+        bookSection.setAttribute("style", "margin: auto; display: grid; grid-template-columns: repeat(5, 250px); gap: 50px; justify-content: space-evenly")
         bookSection.appendChild(bookDiv);
     } 
 }
