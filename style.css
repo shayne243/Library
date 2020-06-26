@@ -10,6 +10,16 @@ div {
     text-align: center;
 }
 
+#new-book-form {
+    font-family: Balsamiq Sans;
+    margin: auto;
+    text-align: center;
+    box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.75);
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 500px;
+}
+
 #main-heading {
     font-family: Balsamiq Sans;
 }
@@ -25,9 +35,13 @@ div {
     border-radius: 20px;
     transition: box-shadow 0.5s;
     font-size: 20px;
+    outline: none;
 }
 
 #new-book:active, #new-book:hover{
     box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.75);
     transition: box-shadow 0.5s;
+    background-color: grey;
+    transition: background-color 0.5s;
+    outline: none;
 }

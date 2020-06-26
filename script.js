@@ -1,5 +1,7 @@
 let library = [];
+let date = new Date();
 let bookSection = document.getElementById("book-section");
+let newBook = document.getElementById("new-book");
 
 function Book(name, author, year, genre, src) {
     this.name = name;
@@ -12,6 +14,10 @@ function Book(name, author, year, genre, src) {
 function addBook(name, author, year, genre, src) {
     let book = new Book(name, author, year, genre, src);
     library.push(book);
+}
+
+function setNewBookBtn() {
+    newBook.addEventListener()
 }
 
 function render() {
