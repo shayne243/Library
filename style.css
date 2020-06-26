@@ -11,11 +11,13 @@ div {
 }
 
 #new-book-form {
+    display: none;
     font-family: Balsamiq Sans;
     margin: auto;
     text-align: center;
     box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.75);
     padding: 20px;
+    padding-bottom: 4px;
     margin-bottom: 20px;
     width: 500px;
 }
@@ -24,7 +26,7 @@ div {
     font-family: Balsamiq Sans;
 }
 
-#new-book {
+.btn {
     font-family: Balsamiq Sans;
     text-align: center;
     display: block;
@@ -38,7 +40,7 @@ div {
     outline: none;
 }
 
-#new-book:active, #new-book:hover{
+.btn:active, .btn:hover{
     box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.75);
     transition: box-shadow 0.5s;
     background-color: grey;
