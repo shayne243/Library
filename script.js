@@ -1,13 +1,50 @@
-let libraryArr = [];
+let library = [];
+let bookSection = document.getElementById("book-section");
 
-function Book(name, author, year, genre) {
+function Book(name, author, year, genre, src) {
     this.name = name;
     this.author = author;
-    this.pubYear = year;
+    this.year = year;
     this.genre = genre;
+    this.src = src;
 }
 
-function addBook(name, author, year, genre) {
-    let book = new Book(name, author, year, genre);
-    libraryArr.push(book);
+function addBook(name, author, year, genre, src) {
+    let book = new Book(name, author, year, genre, src);
+    library.push(book);
 }
+
+function render() {
+    for (let i = 0; i < library.length; ++i) {
+        let bookDiv = document.createElement('div');
+        let bookCover = document.createElement('img');
+        bookCover.setAttribute("src", library[i].src);
+        bookCover.setAttribute("style", "width: 125x; height: 200px; margin: 10px;");
+        let bookTitle = document.createElement('h1');
+        bookTitle.innerHTML = library[i].name;
+        let bookAuthor = document.createElement('h2');
+        bookAuthor.innerHTML = library[i].author;
+        let bookInfo = document.createElement('h3');
+        bookInfo.innerHTML = library[i].genre + ", " + library[i].year;
+        bookDiv.appendChild(bookCover);
+        bookDiv.appendChild(bookTitle);
+        bookDiv.appendChild(bookAuthor);
+        bookDiv.appendChild(bookInfo);
+        bookDiv.setAttribute("style", "border: solid 5px; margin: auto; width: 200px;")
+        bookSection.setAttribute("style", "margin: auto; display: grid; grid-template-columns: repeat(5, 250px); gap: 10px; justify-content: space-evenly")
+        bookSection.appendChild(bookDiv);
+    } 
+}
+
+addBook("hi", "hi", "hi", "hi", "https://marketplace.canva.com/EADao3x6uFI/1/0/251w/canva-green-and-pink-science-fiction-book-cover-f6ZLyPhf4-E.jpg");
+addBook("hi", "hi", "hi", "hi", "https://marketplace.canva.com/EADao3x6uFI/1/0/251w/canva-green-and-pink-science-fiction-book-cover-f6ZLyPhf4-E.jpg");
+addBook("hi", "hi", "hi", "hi", "https://marketplace.canva.com/EADao3x6uFI/1/0/251w/canva-green-and-pink-science-fiction-book-cover-f6ZLyPhf4-E.jpg");
+addBook("hi", "hi", "hi", "hi", "https://marketplace.canva.com/EADao3x6uFI/1/0/251w/canva-green-and-pink-science-fiction-book-cover-f6ZLyPhf4-E.jpg");
+addBook("hi", "hi", "hi", "hi", "https://marketplace.canva.com/EADao3x6uFI/1/0/251w/canva-green-and-pink-science-fiction-book-cover-f6ZLyPhf4-E.jpg");
+addBook("hi", "hi", "hi", "hi", "https://marketplace.canva.com/EADao3x6uFI/1/0/251w/canva-green-and-pink-science-fiction-book-cover-f6ZLyPhf4-E.jpg");
+addBook("hi", "hi", "hi", "hi", "https://marketplace.canva.com/EADao3x6uFI/1/0/251w/canva-green-and-pink-science-fiction-book-cover-f6ZLyPhf4-E.jpg");
+addBook("hi", "hi", "hi", "hi", "https://marketplace.canva.com/EADao3x6uFI/1/0/251w/canva-green-and-pink-science-fiction-book-cover-f6ZLyPhf4-E.jpg");
+addBook("hi", "hi", "hi", "hi", "https://marketplace.canva.com/EADao3x6uFI/1/0/251w/canva-green-and-pink-science-fiction-book-cover-f6ZLyPhf4-E.jpg");
+addBook("hi", "hi", "hi", "hi", "https://marketplace.canva.com/EADao3x6uFI/1/0/251w/canva-green-and-pink-science-fiction-book-cover-f6ZLyPhf4-E.jpg");
+
+render();
