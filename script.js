@@ -74,6 +74,7 @@ function render() {
     readLabel.innerHTML = 'Read: '
     let readToggle = document.createElement("input");
     readToggle.setAttribute("type", "checkbox");
+    readToggle.setAttribute("id", "toggle");
     readToggle.addEventListener("click", function() {
         for (let i = 0; i < library.length; ++i) {
             if (library[i].id == bookDiv.dataset.number) {
