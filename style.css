@@ -6,8 +6,13 @@ body {
 }
 
 div {
-    font-family: MuseoModerno;
+    font-family: Balsamiq Sans;
     text-align: center;
+}
+input {
+    border-radius: 5px;
+    outline: none;
+    height: 30px;
 }
 
 #new-book-form {

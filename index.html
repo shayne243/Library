@@ -3,7 +3,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
     <title>Library</title>
 </head>
 <body>
@@ -17,15 +16,15 @@
             <input type="text" required id="title" name="title"><br><br>
             <label for="author">Author:</label>
             <input type="text" required id="author" name="author"><br><br>
-            <label for="genre">Genre:</label>
-            <input type="text" required id="genre" name="genre"><br><br>
+            <label for="pages">Pages:</label>
+            <input type="number" required min="1" id="pages" name="pages"><br><br>
             <label for="year">Year:</label>
-            <input type="number" required id="year" name="year"><br><br>
-            <input type="submit" id="submit" class="btn"></button>
+            <input type="number" required min="1000" id="year" name="year"><br><br>
+            <button id="submit" class="btn">Submit</button>
         </form>
     </section>
     <section id="book-section">
-
     </section>
+    <script src="script.js"></script>
 </body>
 </html>
