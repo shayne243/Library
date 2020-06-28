@@ -7,22 +7,22 @@
 </head>
 <body>
     <header>
-        <h1 id="main-heading" style="text-align: center;">welcome to the LIBRARY</h1>
-        <button id="new-book" class="btn">New Book</button>
+        <h1 id="main-heading" style="text-align: center;">welcome to your mini-LIBRARY</h1>
+        <button id="new-book" class="btn">Add a New Book</button>
+        <section id="new-book-form">
+            <form id="book-form">
+                <label for="title">Title:</label>
+                <input type="text" required id="title" name="title"><br><br>
+                <label for="author">Author:</label>
+                <input type="text" required id="author" name="author"><br><br>
+                <label for="pages">Pages:</label>
+                <input type="number" required min="1" id="pages" name="pages"><br><br>
+                <label for="year">Year:</label>
+                <input type="number" required min="1000" id="year" name="year"><br><br>
+                <button id="submit" class="btn">Submit</button>
+            </form>
+        </section>  
     </header>
-    <section id="new-book-form">
-        <form id="book-form">
-            <label for="title">Title:</label>
-            <input type="text" required id="title" name="title"><br><br>
-            <label for="author">Author:</label>
-            <input type="text" required id="author" name="author"><br><br>
-            <label for="pages">Pages:</label>
-            <input type="number" required min="1" id="pages" name="pages"><br><br>
-            <label for="year">Year:</label>
-            <input type="number" required min="1000" id="year" name="year"><br><br>
-            <button id="submit" class="btn">Submit</button>
-        </form>
-    </section>
     <section id="book-section">
     </section>
     <script src="script.js"></script>
