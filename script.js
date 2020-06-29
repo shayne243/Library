@@ -1,5 +1,4 @@
 let library = [];
-let date = new Date();
 let bookSection = document.getElementById("book-section");
 let newBook = document.getElementById("new-book");
 let bookForm = document.getElementById("new-book-form");
